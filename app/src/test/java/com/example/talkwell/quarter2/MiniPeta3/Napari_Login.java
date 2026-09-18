@@ -1,12 +1,7 @@
-package com.example.talkwell.quarter2.MiniPeta3;
 
 import java.util.Scanner;
 
-public class Napari_MiniPeta3
-
-import java.util.Scanner;
-
-public class Login {
+public class Napari_Login {
 
     public static void main(String[] args) {
 
@@ -53,7 +48,7 @@ public class Login {
             }
         }
 
-        if (loginSuccessful) {
+        if (!loginSuccessful && attempts >= maxAttempts) {
             System.out.println("Too many failed attempts.");
             System.out.println("Account temporarily locked.");
         }
