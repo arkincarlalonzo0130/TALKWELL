@@ -53,7 +53,7 @@ public class Login {
             }
         }
 
-        if (!loginSuccessful) {
+        if (loginSuccessful) {
             System.out.println("Too many failed attempts.");
             System.out.println("Account temporarily locked.");
         }
