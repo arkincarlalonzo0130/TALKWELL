@@ -15,3 +15,5 @@ public class Galang_MiniPeta1 {
         System.out.println("If I could, I would eat " + favFood + " every single day");
     }
 }
+
+//JMOIUHIU GAHGD CANT COMMMMMMMMMMMITTTTTTT
