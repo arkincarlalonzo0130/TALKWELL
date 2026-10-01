@@ -1,63 +1,58 @@
-package com.example.sampleapplicationfordemo.quarter2.practicalexam;
 
 import java.util.Scanner;
 
-public class FastFoodMenu {
+public class Napari_Login {
 
-    public void start(Scanner scanner) {
+    public static void main(String[] args) {
 
-        boolean running = true;
+        Scanner scanner = new Scanner(System.in);
 
-        while (running) {
+        // Variables
+        String correctUsername = "oyo2121";
+        String correctPassword = "1234";
 
-            System.out.println("\n===== FAST FOOD MENU =====");
-            System.out.println("1. Order Burger");
-            System.out.println("2. Order Fries");
-            System.out.println("3. Exit");
-            System.out.print("Enter your choice: ");
+        String username;
+        String password;
 
-            int choice = scanner.nextInt();
+        int attempts = 0;
+        int maxAttempts = 3;
+        boolean loginSuccessful = false;
 
-            switch (choice) {
+        // Login
+        System.out.println("===== LOGIN SYSTEM =====");
 
-                case 1:
-                    orderBurger(scanner);
-                    break;
+        while (attempts < maxAttempts) {
 
-                case 2:
-                    orderFries();
-                    break;
+            System.out.print("Enter username: ");
+            username = scanner.nextLine();
 
-                case 3:
-                    System.out.println("Thank you for ordering!");
-                    running = false;
-                    break;
+            System.out.print("Enter password: ");
+            password = scanner.nextLine();
 
-                default:
-                    System.out.println("Invalid choice.");
+            if (username.equals(correctUsername) &&
+                    password.equals(correctPassword)) {
+
+                loginSuccessful = true;
+                System.out.println("Login successful!");
+                System.out.println("Welcome, " + username + "!");
+
+                break;
+
+            } else {
+
+                attempts++;
+
+                System.out.println("Invalid username or password.");
+                System.out.println("Attempts remaining: "
+                        + (maxAttempts - attempts));
             }
         }
-    }
 
-    private void orderBurger(Scanner scanner) {
-
-        System.out.println("\n===== BURGER OPTIONS =====");
-        System.out.println("1. Combo");
-        System.out.println("2. Solo");
-        System.out.print("Enter your choice: ");
-
-        int choice = scanner.nextInt();
-
-        if (choice == 1) {
-            System.out.println("Burger Combo ordered.");
-        } else if (choice == 2) {
-            System.out.println("Burger Solo ordered.");
-        } else {
-            System.out.println("Invalid burger option.");
+        if (!loginSuccessful && attempts >= maxAttempts) {
+            System.out.println("Too many failed attempts.");
+            System.out.println("Account temporarily locked.");
         }
-    }
 
-    private void orderFries() {
-        System.out.println("Fries ordered.");
+        scanner.close();
     }
 }
