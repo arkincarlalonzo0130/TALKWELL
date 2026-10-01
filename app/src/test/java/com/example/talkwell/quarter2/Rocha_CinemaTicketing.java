@@ -1,8 +1,8 @@
-package quarter2.practicalexam;
+package com.example.talkwell.quarter2;
 
 import java.util.Scanner;
 
-public class CinemaSystem {
+public class Rocha_CinemaTicketing {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -50,3 +50,42 @@ public class CinemaSystem {
                 System.out.println("Invalid input! Enter a number.");
                 scanner.next();
                 continue;
+            }
+
+            int choice = scanner.nextInt();
+
+            switch (choice) {
+                case 1:
+                    if (hasTicket) {
+                        System.out.println("You already bought a ticket!");
+                    } else if (walletBalance < ticketPrice) {
+                        System.out.println("Insufficient balance to buy a ticket.");
+                    } else {
+                        walletBalance -= ticketPrice;
+                        hasTicket = true;
+                        System.out.println("Ticket purchased successfully! Remaining balance: PHP " + walletBalance);
+                    }
+                    break;
+                case 2:
+                    if (!hasTicket) {
+                        System.out.println("Please buy a ticket first before paying for a seat!");
+                    } else {
+                        System.out.println("Seat payment completed.");
+                    }
+                    break;
+                case 3:
+                    System.out.println("Current wallet balance: PHP " + walletBalance);
+                    break;
+                case 4:
+                    System.out.println("Thank you for using the Online Cinema Ticketing System!");
+                    running = false;
+                    break;
+                default:
+                    System.out.println("Invalid option! Please enter a number between 1 and 4.");
+                    break;
+            }
+        }
+        scanner.close();
+    }
+}
+

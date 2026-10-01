@@ -4,7 +4,7 @@ import org.junit.Test;
 import java.io.ByteArrayInputStream;
 import java.util.Scanner;
 
-public class CinemaTicketingTest {
+public class CinemaTicketingTESTT {
 
     @Test
     public void testCinemaFlow() {
