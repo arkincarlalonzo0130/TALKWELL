@@ -1,0 +1,52 @@
+package quarter2.practicalexam;
+
+import java.util.Scanner;
+
+public class CinemaSystem {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Variables
+        int age = 0;
+        String selectedMovie = "";
+        double ticketPrice = 400.00; // Flat ticket price
+        double seatPrice = 0.0;
+        double walletBalance = 1800.00; // Default wallet balance
+        boolean hasTicket = false;
+        boolean running = true;
+
+        System.out.println("=========================================");
+        System.out.println("     ONLINE CINEMA TICKETING SYSTEM      ");
+        System.out.println("=========================================");
+
+        // Step 1: Age Input
+        System.out.print("Enter your age: ");
+        if (scanner.hasNextInt()) {
+            age = scanner.nextInt();
+        }
+
+        // Age Check: Underage declined completely
+        if (age < 18) {
+            System.out.println("\n ACCESS DENIED: You must be at least 18 years old.");
+            System.out.println("Exiting system...");
+            scanner.close();
+            return; // Stops the program completely
+        }
+
+        System.out.println(" Access Granted! Welcome to the cinema.");
+
+        // Step 2: Main Menu Loop
+        while (running) {
+            System.out.println("\n---------------- MAIN MENU ----------------");
+            System.out.println("1. Buy Ticket");
+            System.out.println("2. Pay for Seat");
+            System.out.println("3. Check Balance");
+            System.out.println("4. Exit");
+            System.out.println("-------------------------------------------");
+            System.out.print("Choose an option (1-4): ");
+
+            if (!scanner.hasNextInt()) {
+                System.out.println("Invalid input! Enter a number.");
+                scanner.next();
+                continue;
