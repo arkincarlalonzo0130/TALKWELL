@@ -29,7 +29,7 @@ public class Napari_FastFoodTest {
         ByteArrayInputStream inputStream = new ByteArrayInputStream(automatedInput.toString().getBytes());
         Scanner scanner = new Scanner(inputStream);
 
-        Alonzo_FastFoodMenu fastFoodSystem = new Alonzo_FastFoodMenu();
+        Napari_FastFoodMenu fastFoodSystem = new Napari_FastFoodMenu();
         fastFoodSystem.start(scanner);
     }
 }
