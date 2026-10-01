@@ -32,4 +32,4 @@ public class Napari_FastFoodTest {
         Napari_FastFoodMenu fastFoodSystem = new Napari_FastFoodMenu();
         fastFoodSystem.start(scanner);
     }
-
+}
