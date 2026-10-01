@@ -19,26 +19,27 @@ public class Alonzo_MainActivity extends AppCompatActivity {
 
         depressionButton = findViewById(R.id.depressionButton);
         anxietyButton = findViewById(R.id.anxietyButton);
-        selfEsteemButton = findViewById(R.id.anxietyButton);
+        selfEsteemButton = findViewById(R.id.selfEsteemButton);
 
         depressionButton.setOnClickListener(v -> {
-           openGame("depression")
+           openGame("depression");
         });
 
         anxietyButton.setOnClickListener(v -> {
-            openGame("anxiety")
+            openGame("anxiety");
         });
 
         selfEsteemButton.setOnClickListener(v -> {
-            openGame("self_esteem")
+            openGame("self_esteem");
         });
-
-        public void openGame(String topic) {
-
-            Intent intent = new Intent(Alonzo_MainActivity.this, Alonzo_MiniGameActivity.class);
-
-            Intent.putExtra("topic", topic);
-
-            startActivity(intent);
-        }
     }
+
+    public void openGame(String topic) {
+
+        Intent intent = new Intent(Alonzo_MainActivity.this, Alonzo_MiniGameActivity.class);
+
+        intent.putExtra("topic", topic);
+
+        startActivity(intent);
+    }
+}
