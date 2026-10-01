@@ -4,10 +4,10 @@ import org.junit.Test;
 import java.io.ByteArrayInputStream;
 import java.util.Scanner;
 
-public class FastFoodTest {
+public class Napari_FastFoodTest {
+
     @Test
     public void testFastFoodFlow() {
-
         StringBuilder automatedInput = new StringBuilder();
         System.out.println("--- GENERATING FAST FOOD TEST DATA ---");
 // Step 1: Order Burger as Combo (Nested option 1)
