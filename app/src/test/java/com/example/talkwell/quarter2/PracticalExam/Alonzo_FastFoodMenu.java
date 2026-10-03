@@ -1,8 +1,7 @@
 package com.example.talkwell.quarter2.PracticalExam;
 
-import com.example.talkwell.quarter2.PracticalExam;
-
 import java.util.Scanner;
+
 public class Alonzo_FastFoodMenu {
     public void start(Scanner scanner) {
 
@@ -17,6 +16,7 @@ public class Alonzo_FastFoodMenu {
             System.out.print("Welcome to Fast Food! What would you like to order?:");
 
             int choice = scanner.nextInt();
+<<<<<<< HEAD
 
             case 1:
                 orderBurger(scanner);
@@ -35,4 +35,24 @@ public class Alonzo_FastFoodMenu {
                 System.out.println("It appears that isn't on the menu. Please choose again!");
         }
     }
-}
+    private void orderBurger(Scanner scanner) {
+
+        System.out.println("\n=== BURGER OPTIONS ===");
+        System.out.println("1. Combo Meal");
+        System.out.println("2. Solo Meal");
+
+            if (choice == 1) {
+                System.out.println("You selected Burger.");
+
+            } else if (choice == 2) {
+                System.out.println("You selected Fries.");
+
+            } else if (choice == 3) {
+                System.out.println("Thank you! Have a nice day!");
+                running = false;
+
+            } else {
+                System.out.println("Invalid choice. Please try again.");
+            }
+        }
+    }
