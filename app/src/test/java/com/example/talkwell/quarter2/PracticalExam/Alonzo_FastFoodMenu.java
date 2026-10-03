@@ -35,11 +35,4 @@ public class Alonzo_FastFoodMenu {
                 System.out.println("It appears that isn't on the menu. Please choose again!");
         }
     }
-    private void orderBurger(Scanner scanner) {
-
-        System.out.println("\n=== BURGER OPTIONS ===");
-        System.out.println("1. Combo Meal");
-        System.out.println("2. Solo Meal");
-
-    }
 }
