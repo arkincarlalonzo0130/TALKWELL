@@ -4,10 +4,10 @@ import org.junit.Test;
 import java.io.ByteArrayInputStream;
 import java.util.Scanner;
 
-public class FastFoodTest {
+public class Napari_FastFoodTest {
+
     @Test
     public void testFastFoodFlow() {
-
         StringBuilder automatedInput = new StringBuilder();
         System.out.println("--- GENERATING FAST FOOD TEST DATA ---");
 // Step 1: Order Burger as Combo (Nested option 1)
@@ -29,7 +29,7 @@ public class FastFoodTest {
         ByteArrayInputStream inputStream = new ByteArrayInputStream(automatedInput.toString().getBytes());
         Scanner scanner = new Scanner(inputStream);
 
-        Alonzo_FastFoodMenu fastFoodSystem = new Alonzo_FastFoodMenu();
+        Napari_FastFoodMenu fastFoodSystem = new Napari_FastFoodMenu();
         fastFoodSystem.start(scanner);
     }
 }

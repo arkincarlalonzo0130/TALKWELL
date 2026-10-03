@@ -7,7 +7,9 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Alonzo_MiniGameActivity extends AppCompatActivity{
+import com.example.talkwell.R;
+
+public class Alonzo_MiniGameActivity extends AppCompatActivity {
 
     TextView questionText;
 
@@ -18,18 +20,13 @@ public class Alonzo_MiniGameActivity extends AppCompatActivity{
     String topic;
 
     @Override
-    protected void onCreate (Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         questionText = findViewById(R.id.questionText);
 
-        answer1 = findviewbyId (R.id.answer1);
-        answer2 = findviewbyID (R.id.answer2);
-        answer3 = findviewbyID (R.id.answer3);
-
-
-
+        answer1 = findViewById(R.id.answer1);
+        answer2 = findViewById(R.id.answer2);
+        answer3 = findViewById(R.id.answer3);
     }
-
-
 }
