@@ -16,43 +16,45 @@ public class Alonzo_FastFoodMenu {
             System.out.print("Welcome to Fast Food! What would you like to order?:");
 
             int choice = scanner.nextInt();
-<<<<<<< HEAD
 
-            case 1:
-                orderBurger(scanner);
-                break;
+            switch (choice) {
+                case 1:
+                    orderBurger(scanner);
+                    break;
 
-            case 2:
-                orderFries();
-                break;
+                case 2:
+                    orderFries();
+                    break;
 
-            case 3:
-                System.out.println("Come again soon!");
-                running = false;
-                break;
+                case 3:
+                    System.out.println("Come again soon!");
+                    running = false;
+                    break;
 
-            default:
-                System.out.println("It appears that isn't on the menu. Please choose again!");
+                default:
+                    System.out.println("It appears that isn't on the menu. Please choose again!");
+            }
         }
     }
+
     private void orderBurger(Scanner scanner) {
 
         System.out.println("\n=== BURGER OPTIONS ===");
         System.out.println("1. Combo Meal");
         System.out.println("2. Solo Meal");
 
-            if (choice == 1) {
-                System.out.println("You selected Burger.");
+        int choice = scanner.nextInt();
 
-            } else if (choice == 2) {
-                System.out.println("You selected Fries.");
-
-            } else if (choice == 3) {
-                System.out.println("Thank you! Have a nice day!");
-                running = false;
-
-            } else {
-                System.out.println("Invalid choice. Please try again.");
-            }
+        if (choice == 1) {
+            System.out.println("You have ordered the Burger Combo Meal!");
+        } else if (choice == 2) {
+            System.out.println("You have ordered the Burger Solo Meal!");
+        } else {
+            System.out.println("INVALID OPTION");
         }
     }
+
+    private void orderFries() {
+        System.out.println("You have order Fries!");
+    }
+}
