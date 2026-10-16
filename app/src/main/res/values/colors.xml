@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+    <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
@@ -7,4 +7,9 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="coolyellow">#f5f3bf</color>
+    <color name="button1yellow">#f2f1ce</color>
+    <color name="button2purple">#baaddb</color>
+    <color name="button3red">#dbadba</color>
+    <color name="brownish">#7d682f</color>
 </resources>
