@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@drawable/prize_prize_background"/>
+    <foreground android:drawable="@mipmap/prize_prize_foreground"/>
+    <monochrome android:drawable="@mipmap/prize_prize_foreground"/>
+</adaptive-icon>
