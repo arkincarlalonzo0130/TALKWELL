@@ -1,41 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center">
-
-
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/coolyellow"
-        android:gravity="center_horizontal"
-        android:orientation="vertical"
-        android:paddingTop="70dp">
+        android:background="@color/coolyellow">
 
-        <TextView
-            android:id="@+id/textView7"
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="83dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="#F3F1BE"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile_icon" />
+
+    <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:textSize="40dp"
-            android:layout_marginTop="20dp"
-            android:fontFamily="@font/orbitron"
-            android:textColor="@color/brownish"
-            android:layout_marginBottom="5dp"
-            android:text="INTERACTIVE LEARNING!" />
+            android:layout_height="0dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/imageButton5"
+            app:layout_constraintBottom_toBottomOf="parent">
 
-        <TextView
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/orbitron"
+                android:elevation="3dp"
+                android:text="INTERACTIVE LEARNING!"
+                android:layout_marginTop="30dp"
+                android:textAlignment="center"
+                android:textColor="@color/brownish"
+                android:textSize="40dp" />
+
+            <TextView
             android:id="@+id/textView6"
             android:layout_width="581dp"
             android:layout_height="wrap_content"
-            android:paddingBottom="25dp"
             android:fontFamily="@font/orbitron"
-            android:textColor="@color/brownish"
+            android:paddingBottom="25dp"
             android:text="A PLACE OF FUN AND KNOWLEDGE"
             android:textAlignment="center"
+            android:textColor="@color/brownish"
             android:textSize="16dp" />
 
         <TextView
@@ -141,5 +154,40 @@
 
         </com.google.android.material.chip.ChipGroup>
 
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/black_arrow" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/black_arrow" />
+
     </LinearLayout>
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="68dp"
+        android:backgroundTint="@color/coolyellow"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/Points" />
+
+    <ImageButton
+        android:id="@+id/imageButton10"
+        android:layout_width="61dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="332dp"
+        android:backgroundTint="@color/coolyellow"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu" />
 

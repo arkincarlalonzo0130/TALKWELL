@@ -7,4 +7,162 @@
     android:layout_height="match_parent"
     tools:context=".rocha_RewardsandPointssystem">
 
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="986dp"
+        android:layout_height="1186dp"
+        app:srcCompat="@mipmap/background_background_foreground"
+        tools:layout_editor_absoluteX="-402dp"
+        tools:layout_editor_absoluteY="-155dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="548dp"
+        android:layout_height="490dp"
+        app:srcCompat="@mipmap/prize_prize_foreground"
+        tools:layout_editor_absoluteX="-69dp"
+        tools:layout_editor_absoluteY="465dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="680dp"
+        android:layout_height="992dp"
+        app:srcCompat="@mipmap/design__foreground"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="414dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="564dp"
+        android:layout_height="597dp"
+        app:srcCompat="@mipmap/design__foreground"
+        tools:layout_editor_absoluteX="-264dp"
+        tools:layout_editor_absoluteY="136dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="1040dp"
+        android:layout_height="588dp"
+        app:srcCompat="@mipmap/design__foreground"
+        tools:layout_editor_absoluteX="-109dp"
+        tools:layout_editor_absoluteY="-191dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="674dp"
+        android:layout_height="698dp"
+        app:srcCompat="@mipmap/design_design_foreground"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="129dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="521dp"
+        android:layout_height="636dp"
+        app:srcCompat="@mipmap/design_design_foreground"
+        tools:layout_editor_absoluteX="-253dp"
+        tools:layout_editor_absoluteY="-140dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="530dp"
+        android:layout_height="678dp"
+        app:srcCompat="@mipmap/design_design_foreground"
+        tools:layout_editor_absoluteX="-262dp"
+        tools:layout_editor_absoluteY="550dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="520dp"
+        android:layout_height="703dp"
+        app:srcCompat="@mipmap/rewards_rewards_foreground"
+        tools:layout_editor_absoluteX="-55dp"
+        tools:layout_editor_absoluteY="42dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="90dp"
+        android:layout_height="138dp"
+        android:rotation="-149"
+        app:srcCompat="@android:drawable/ic_menu_send"
+        tools:layout_editor_absoluteX="244dp"
+        tools:layout_editor_absoluteY="327dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="340dp"
+        android:layout_height="462dp"
+        app:srcCompat="@mipmap/logo_logo_foreground"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="-135dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="262dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="!!TAP TO CLAIM YOUR PRIZE!!"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="685dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="328dp"
+        android:layout_height="68dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="click here to view your score"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="398dp" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="545dp"
+        android:layout_height="417dp"
+        app:srcCompat="@mipmap/congrats_congrats_foreground"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-66dp"
+        tools:layout_editor_absoluteY="48dp" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="356dp"
+        android:layout_height="455dp"
+        app:srcCompat="@mipmap/pointssystem__foreground"
+        tools:layout_editor_absoluteX="-56dp"
+        tools:layout_editor_absoluteY="-139dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="255dp"
+        android:layout_height="339dp"
+        app:srcCompat="@android:drawable/button_onoff_indicator_on"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="659dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="419dp"
+        android:layout_height="385dp"
+        app:srcCompat="@mipmap/talkwell__foreground"
+        tools:layout_editor_absoluteX="-14dp"
+        tools:layout_editor_absoluteY="675dp"
+        tools:ignore="MissingConstraints" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
