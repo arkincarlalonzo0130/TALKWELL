@@ -120,23 +120,23 @@
 
     <EditText
         android:id="@+id/editTextText3"
-        android:layout_width="238dp"
-        android:layout_height="45dp"
+        android:layout_width="328dp"
+        android:layout_height="68dp"
         android:ems="10"
         android:inputType="text"
         android:text="click here to view your score"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="414dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="398dp" />
 
     <ImageView
         android:id="@+id/imageView19"
         android:layout_width="545dp"
         android:layout_height="417dp"
         app:srcCompat="@mipmap/congrats_congrats_foreground"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="-66dp"
-        tools:layout_editor_absoluteY="48dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="48dp" />
 
     <ImageView
         android:id="@+id/imageView20"
