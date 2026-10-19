@@ -15,21 +15,12 @@
     <!-- Top Right Stars -->
 
     <ImageView
-        android:id="@+id/ivSunflower"
-        android:layout_width="356dp"
-        android:layout_height="292dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="4dp"
-        android:src="@drawable/sunflower_watercolor_placeholder"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
         android:id="@+id/ivStars"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
+        android:contentDescription="@string/todo"
         android:src="@drawable/stars_icon_placeholder"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -41,13 +32,14 @@
         android:layout_height="180dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
+        android:contentDescription="@string/login"
         android:src="@drawable/cartoon_bee_placeholder"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <!-- LOGIN COMPONENTS -->
 
-    <!-- Welcome Header as a TextView -->
+    <!-- Welcome, Header as a TextView -->
     <TextView
         android:id="@+id/tvWelcome"
         android:layout_width="wrap_content"
@@ -58,7 +50,7 @@
         android:paddingTop="12dp"
         android:paddingEnd="32dp"
         android:paddingBottom="12dp"
-        android:text="Welcome!"
+        android:text="@string/welcome"
         android:textColor="#333333"
         android:textSize="40sp"
         android:textStyle="bold"
@@ -74,8 +66,9 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="32dp"
+        android:autofillHints=""
         android:background="@android:drawable/editbox_background_normal"
-        android:hint="Username or Email"
+        android:hint="@string/username_or_email"
         android:inputType="textEmailAddress"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
@@ -92,8 +85,9 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="32dp"
+        android:autofillHints=""
         android:background="@android:drawable/editbox_background_normal"
-        android:hint="Password"
+        android:hint="@string/password"
         android:inputType="textPassword"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
@@ -111,7 +105,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:backgroundTint="#FFD700"
-        android:text="Log In"
+        android:text="@string/log_in"
         android:textColor="#333333"
         android:textSize="28sp"
         android:textStyle="bold"
@@ -125,7 +119,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Forgot Password?"
+        android:text="@string/forgot_password"
         android:textColor="#555555"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -145,7 +139,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New here? "
+            android:text="@string/new_here"
             android:textColor="#555555"
             android:textSize="20sp" />
 
@@ -153,7 +147,7 @@
             android:id="@+id/tvSignUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sign Up"
+            android:text="@string/sign_up"
             android:textColor="#222222"
             android:textSize="20sp"
             android:textStyle="bold" />
