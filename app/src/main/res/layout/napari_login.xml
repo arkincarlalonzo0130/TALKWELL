@@ -14,28 +14,7 @@
 
     <!-- Top Right Stars -->
 
-    <ImageView
-        android:id="@+id/ivStars"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
-        android:contentDescription="@string/todo"
-        android:src="@drawable/stars_icon_placeholder"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <!-- Bottom Right Bee -->
-    <ImageView
-        android:id="@+id/ivBee"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:contentDescription="@string/login"
-        android:src="@drawable/cartoon_bee_placeholder"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
 
     <!-- LOGIN COMPONENTS -->
 
