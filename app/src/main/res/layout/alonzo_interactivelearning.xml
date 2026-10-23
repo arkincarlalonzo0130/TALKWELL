@@ -63,7 +63,7 @@
             android:textSize="20dp" />
 
         <Button
-            android:id="@+id/selfEsteemButton"
+            android:id="@+id/anxietyButton"
             android:layout_width="284dp"
             android:layout_height="100dp"
             android:layout_marginBottom="8dp"
@@ -76,7 +76,7 @@
             app:strokeWidth="2dp" />
 
         <Button
-            android:id="@+id/anxietyButton"
+            android:id="@+id/depressionButton"
             android:layout_width="284dp"
             android:layout_height="100dp"
             android:layout_marginBottom="8dp"
@@ -89,7 +89,7 @@
             app:strokeWidth="2dp" />
 
         <Button
-            android:id="@+id/depressionButton"
+            android:id="@+id/selfesteemButton"
             android:layout_width="284dp"
             android:layout_height="100dp"
             android:backgroundTint="@color/button3red"
