@@ -3,45 +3,24 @@ package com.example.talkwell;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
-import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class Alonzo_InteractiveLearning extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_interactivelearning);
 
         // Topic buttons
-        Button anxietyButton = findViewById(R.id.selfEsteemButton);
-        Button depressionButton = findViewById(R.id.anxietyButton);
-        Button selfEsteemButton = findViewById(R.id.depressionButton);
+        Button anxietyButton = findViewById(R.id.anxietyButton);
 
         // Open Anxiety screen
         anxietyButton.setOnClickListener(v -> {
             Intent intent = new Intent(
-                    MainActivity.this,
+                    Alonzo_InteractiveLearning.this, // Fixed class name case
                     AnxietyActivity.class
-            );
-            startActivity(intent);
-        });
-
-        // Open Depression screen
-        depressionButton.setOnClickListener(v -> {
-            Intent intent = new Intent(
-                    MainActivity.this,
-                    DepressionActivity.class
-            );
-            startActivity(intent);
-        });
-
-        // Open Self-Esteem screen
-        selfEsteemButton.setOnClickListener(v -> {
-            Intent intent = new Intent(
-                    MainActivity.this,
-                    SelfEsteemActivity.class
             );
             startActivity(intent);
         });

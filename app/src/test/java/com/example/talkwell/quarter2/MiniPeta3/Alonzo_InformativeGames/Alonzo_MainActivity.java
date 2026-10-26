@@ -15,7 +15,7 @@ public class Alonzo_MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.alonzo_interactivelearning);
+        setContentView(R.layout.activity_interactivelearning);
 
         depressionButton = findViewById(R.id.depressionButton);
         anxietyButton = findViewById(R.id.anxietyButton);
