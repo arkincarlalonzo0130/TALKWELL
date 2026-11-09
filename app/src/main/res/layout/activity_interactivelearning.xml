@@ -177,7 +177,7 @@
         android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/Points" />
+        app:srcCompat="@drawable/points" />
 
     <ImageButton
         android:id="@+id/imageButton10"
@@ -191,3 +191,4 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/menu" />
 
+</androidx.constraintlayout.widget.ConstraintLayout>

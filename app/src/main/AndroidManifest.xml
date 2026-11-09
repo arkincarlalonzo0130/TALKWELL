@@ -29,6 +29,15 @@
             android:exported="true" />
 
         <activity
+            android:name=".DepressionActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".selfesteemActivity"
+            android:exported="false" />
+
+
+        <activity
             android:name=".Quiz"
             android:exported="true"
             android:windowSoftInputMode="adjustResize" />

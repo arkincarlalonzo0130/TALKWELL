@@ -38,27 +38,27 @@
         tools:layout_editor_absoluteY="708dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonSatisfactory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@android:color/holo_green_dark"
-        android:text="Satifactory"
+        android:text="Satisfactory"
         android:textSize="27sp"
         tools:layout_editor_absoluteX="88dp"
         tools:layout_editor_absoluteY="371dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonUnsatisfactory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@android:color/holo_red_dark"
-        android:text="Unsatifactory"
+        android:text="Unsatisfactory"
         android:textSize="27sp"
         tools:layout_editor_absoluteX="71dp"
         tools:layout_editor_absoluteY="520dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonIndifferent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@android:color/system_accent2_600"
@@ -84,3 +84,4 @@
         tools:layout_editor_absoluteX="6dp"
         tools:layout_editor_absoluteY="6dp" />
 
+</androidx.constraintlayout.widget.ConstraintLayout>

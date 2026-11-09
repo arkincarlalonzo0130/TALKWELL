@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/coolyellow">
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/coolyellow">
 
     <ImageButton
         android:id="@+id/imageButton5"
@@ -15,37 +15,49 @@
         android:layout_marginEnd="4dp"
         android:backgroundTint="#F3F1BE"
         android:scaleType="fitXY"
+        app:srcCompat="@drawable/profile_icon"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/profile_icon" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="68dp"
+        android:backgroundTint="@color/coolyellow"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/points"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton10"
+        android:layout_width="61dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@color/coolyellow"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="0dp"
-        android:gravity="center_horizontal"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageButton5">
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageButton5"
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/button_border" />
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="211dp"
-            android:layout_height="227dp"
-            android:elevation="2dp"
-            android:translationX="-97dp"
-            android:translationY="-307dp"
-            android:visibility="visible"
-            app:srcCompat="@drawable/brain_yellow"
-            tools:layout_editor_absoluteX="184dp"
-            tools:layout_editor_absoluteY="292dp" />
+            app:srcCompat="@drawable/button_border"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/textView7"
@@ -56,9 +68,10 @@
             android:text="ANXIETY"
             android:textAlignment="center"
             android:textColor="@color/brownish"
-            android:textSize="40dp"
-            tools:layout_editor_absoluteX="89dp"
-            tools:layout_editor_absoluteY="198dp" />
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView"
@@ -69,39 +82,31 @@
             android:text="Learn more about anxiety and how to healthily manage it"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="15dp"
-            tools:layout_editor_absoluteX="76dp"
-            tools:layout_editor_absoluteY="260dp" />
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@id/textView7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="211dp"
+            android:layout_height="227dp"
+            android:elevation="2dp"
+            android:visibility="visible"
+            app:srcCompat="@drawable/brain_yellow"
+            app:layout_constraintTop_toBottomOf="@id/textView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <com.google.android.material.chip.ChipGroup
             android:id="@+id/chipGroup"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-        </com.google.android.material.chip.ChipGroup>
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/imageView2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <ImageButton
-        android:layout_width="100dp"
-        android:layout_height="93dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="68dp"
-        android:backgroundTint="@color/coolyellow"
-        android:scaleType="fitXY"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/Points" />
-
-    <ImageButton
-        android:id="@+id/imageButton10"
-        android:layout_width="61dp"
-        android:layout_height="63dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="332dp"
-        android:backgroundTint="@color/coolyellow"
-        android:scaleType="fitXY"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/menu" />
+</androidx.constraintlayout.widget.ConstraintLayout>
 
